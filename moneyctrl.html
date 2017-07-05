@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/moneyctrl.css">
+</head>
+
+<body>
+    <!--头部-->
+    <header id='header'>
+        <a href="index.html" class='arrow_back'>
+            < </a>
+                <h5 id="header_title">省钱控 - 最新优惠</h5>
+                <a href="#" class='download_app'>
+                    <img src="./images/header_app.png" alt="">
+                </a>
+    </header>
+
+    <!--商品列表-->
+    <main id="product_list">
+        <div class="list_container">
+            <!--<div class="media">
+                <div class="media-left">
+                    <a href="#">
+                        <img class="media-object" src="http://cacheimg.manmanbuy.com/r_img/cacheimg.aspx?width=600&imgurl=http://a.manmanbuy.com:8013/cuxiaoPic/201610/201610001412282758.jpg"
+                            alt="...">
+                    </a>
+                </div>
+                <div class="media-body">
+                    <h5 class="media-heading">
+                        移动端凑单品：海天 鲜味 生抽 1.28L<span class='price'>10.9元</span></h5>
+                    <div class="info">
+                        <p>京东商城 | 10-25 14:10</p>
+                        <span>
+            <i></i>有1人评论
+        </span>
+                    </div>
+                </div>
+            </div>-->
+        </div>
+
+    </main>
+
+
+
+    <!--分页-->
+    <section id="pagination">
+        <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="true">
+    第1页
+    <span class="caret"></span>
+  </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <!--<li><a href="#">第1页</a></li>
+                <li><a href="#">第2页</a></li>
+                <li><a href="#">第3页</a></li>-->
+            </ul>
+        </div>
+        <a href="javascript:;" class='btn btn-default prev'>上一页</a>
+        <a href="javascript:;" class='btn btn-default next'>下一页</a>
+    </section>
+
+
+
+    <!--页脚-->
+    <footer id='footer'>
+        <div class="row">
+            <div class="col-xs-4">
+                <a href="javascript:;">登录</a>
+            </div>
+            <div class="col-xs-4">
+                <a href="javascript:;">注册</a>
+            </div>
+            <div class="col-xs-4">
+
+                <img class='arrows' src="http://www.zuyushop.com/wap/images/top.jpg" alt=""> 返回顶部
+            </div>
+        </div>
+        <div>
+            <a href="javascript:;">手机APP下载</a>
+            <span>慢慢买手机版-- 掌上比价平台</span>
+            <p> m.manmanbuy.com</p>
+        </div>
+    </footer>
+
+    <script src='./lib/jquery/jquery.js'></script>
+    <script src="./lib/bootstrap/js/bootstrap.js"></script>
+    <script src='./lib/artTemplate/template.js'></script>
+    <script src="js/url.js"></script>
+    <script src='js/moneyctrl.js'></script>
+
+    <!--商品列表的渲染引擎-->
+    <script type='text/template' id='product_data'>
+        {{each result as item index}}
+        <div class="media">
+            <div class="media-left">
+                <a href="#">
+                    {{#item.productImgSm}}
+                </a>
+            </div>
+            <div class="media-body">
+                <h5 class="media-heading">
+                    {{item.productName}}<span class='price'>{{item.productPinkage}}</span></h5>
+                <div class="info">
+                    <p> {{item.productFrom}} | {{item.productTime}}</p>
+                    <span>
+            <i></i>{{item.productComCount}}
+        </span>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </script>
+
+</body>
+
+</html>

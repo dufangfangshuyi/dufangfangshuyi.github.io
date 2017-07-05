@@ -1,0 +1,245 @@
+body,
+html {
+  font-family: "Microsoft YaHei";
+  background: #efefef;
+  overflow-x: hidden;
+}
+input,
+select,
+button {
+  -webkit-top-highlight-color: transparent;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+#header {
+  background: #ff8410;
+  width: 100%;
+  height: 50px;
+  position: relative;
+  line-height: 50px;
+}
+#header .logo {
+  position: absolute;
+  left: 10px;
+}
+#header .logo img {
+  width: 200px;
+}
+#header .download_app {
+  position: absolute;
+  right: 10px;
+}
+#header .download_app img {
+  height: 30px;
+}
+#search {
+  width: 100%;
+  padding: 10px;
+  background: #fff;
+}
+#search form {
+  position: relative;
+  padding-right: 70px;
+}
+#search form input[type='search'] {
+  font-size: 14px;
+  border: 0;
+  width: 100%;
+  background: #f1f1f1;
+  height: 30px;
+  border-radius: 20px;
+  text-indent: 20px;
+}
+#search form a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 30px;
+  border-radius: 20px;
+  width: 60px;
+  color: #fff;
+  padding: 0;
+  line-height: 30px;
+  background: #ff8410;
+}
+/*页面导航*/
+#product_nav {
+  background: #efefef;
+  position: relative;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+#product_nav .breadcrumb {
+  position: relative;
+  margin-bottom: 0px;
+}
+#product_nav .breadcrumb li:before {
+  content: '';
+  padding: 0px;
+}
+#product_nav .breadcrumb li:after {
+  content: '>';
+}
+#product_nav .breadcrumb .lis {
+  width: 100px;
+  height: 20px;
+  overflow: hidden;
+  position: absolute;
+}
+#product_nav .btn-default {
+  position: absolute;
+  right: 10px;
+  top: 3px;
+  height: 30px;
+  background: #e6e6e6;
+}
+/*商品详情*/
+#product_detail {
+  background: #fff;
+  text-align: center;
+  padding: 10px 20px 20px;
+  position: relative;
+}
+#product_detail p {
+  color: #000;
+  font-size: 16px;
+  margin: 0px;
+}
+#product_detail .product_collect {
+  display: block;
+  width: 39px;
+  height: 39px;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+#product_detail .product_collect img {
+  width: 39px;
+  height: 39px;
+}
+/*商品详情导航*/
+#detail_nav {
+  text-align: center;
+}
+#detail_nav .row {
+  height: 35px;
+  line-height: 35px;
+}
+#detail_nav .row > div {
+  background: #ffc31d;
+  border: 1px solid #c14d00;
+  border-left: 0px;
+}
+#detail_nav .row > div a {
+  color: #fff;
+  font-size: 16px;
+}
+#detail_nav .row div:first-child {
+  background: #ff9a17;
+}
+/*详情列表*/
+#detail_list {
+  background: #fff;
+}
+#detail_list #price_compare {
+  padding: 10px 0px 0px 5px;
+  margin: 0px;
+  list-style: none;
+}
+#detail_list #price_compare li {
+  position: relative;
+  height: 40px;
+  line-height: 30px;
+  padding-bottom: 10px;
+}
+#detail_list #price_compare li img {
+  margin-right: 5px;
+}
+#detail_list #price_compare li span {
+  position: absolute;
+  right: 70px;
+  color: #fe0202;
+  font-size: 16px;
+}
+#detail_list #price_compare li .btn-default {
+  height: 30px;
+  padding: 6px;
+  background: #ff8410;
+  position: absolute;
+  right: 0px;
+}
+#detail_list p {
+  padding: 10px 10px 10px 5px;
+  border-top: 1px solid #ccc;
+  margin: 0px;
+}
+/*优选网友评价*/
+#detail_evaluate {
+  border-top: 4px solid #ccc;
+}
+#detail_evaluate .evaluate_title {
+  height: 34px;
+  border-top: 1px solid #fff;
+  text-align: center;
+  line-height: 34px;
+  font-size: 16px;
+  color: #000;
+  background: #dbdbdb;
+  margin: 0px;
+}
+#detail_evaluate .evaluate_list {
+  background: #fff;
+  margin: 0px;
+  padding: 10px ;
+  border-top: 1px solid #ccc;
+  position: relative;
+}
+#detail_evaluate .evaluate_list .valuate_name {
+  font-size: 16px;
+  color: #999;
+}
+#detail_evaluate .evaluate_list .valuate_time {
+  font-size: 12px;
+  color: #666;
+  position: absolute;
+  right: 10px;
+}
+#detail_evaluate .evaluate_list .valuate_source {
+  font-size: 12px;
+  color: #666;
+  position: absolute;
+  right: 10px;
+}
+#detail_evaluate .evaluate_list .valuate_text {
+  margin: 20px 0px 0px;
+  line-height: 22px;
+}
+#detail_evaluate .more_info {
+  padding: 10px;
+}
+#detail_evaluate .more_info a {
+  display: block;
+  text-align: center;
+  height: 32px;
+  line-height: 32px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #d4d4d4;
+  color: #5a5a5a;
+}
+#footer {
+  height: 100px;
+  text-align: center;
+}
+#footer .row > div {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-left: 0px;
+  text-align: center;
+}
+#footer .row > div:last-child img {
+  width: 15px;
+  vertical-align: top;
+}

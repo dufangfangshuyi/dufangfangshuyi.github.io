@@ -1,0 +1,103 @@
+body,
+html {
+  font-family: "Microsoft YaHei";
+  background: #efefef;
+  overflow-x: hidden;
+}
+input,
+select,
+button {
+  -webkit-top-highlight-color: transparent;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+#header {
+  background: #ff8410;
+  width: 100%;
+  height: 50px;
+  position: relative;
+  line-height: 50px;
+}
+#header .logo {
+  position: absolute;
+  left: 10px;
+}
+#header .logo img {
+  width: 200px;
+}
+#header .download_app {
+  position: absolute;
+  right: 10px;
+}
+#header .download_app img {
+  height: 30px;
+}
+#search {
+  width: 100%;
+  padding: 10px;
+  background: #fff;
+}
+#search form {
+  position: relative;
+  padding-right: 70px;
+}
+#search form input[type='search'] {
+  font-size: 14px;
+  border: 0;
+  width: 100%;
+  background: #f1f1f1;
+  height: 30px;
+  border-radius: 20px;
+  text-indent: 20px;
+}
+#search form a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 30px;
+  border-radius: 20px;
+  width: 60px;
+  color: #fff;
+  padding: 0;
+  line-height: 30px;
+  background: #ff8410;
+}
+/*数据列表*/
+#product_list #accordion .panel-default {
+  margin-top: 0px;
+}
+#product_list #accordion .panel-default .panel-heading {
+  background: #ededed;
+}
+#product_list #accordion .panel-default .panel-heading a {
+  display: block;
+  font-weight: 700;
+  background: url(../images/arrow1.gif) right center no-repeat;
+}
+#product_list #accordion .panel-default .panel-body {
+  background: #f9f9f9;
+  padding: 0px;
+}
+#product_list #accordion .panel-default .panel-body .row > div {
+  padding: 10px 0px;
+  text-align: center;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+/*页脚*/
+#footer {
+  height: 100px;
+  text-align: center;
+}
+#footer .row > div {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-left: 0px;
+  text-align: center;
+}
+#footer .row > div:last-child img {
+  width: 15px;
+  vertical-align: top;
+}

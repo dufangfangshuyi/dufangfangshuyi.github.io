@@ -1,0 +1,15 @@
+body,
+html {
+  font-family: "Microsoft YaHei";
+  background: #efefef;
+  overflow-x: hidden;
+}
+input,
+select,
+button {
+  -webkit-top-highlight-color: transparent;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}

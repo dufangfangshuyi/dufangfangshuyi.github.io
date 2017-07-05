@@ -1,0 +1,153 @@
+body,
+html {
+  font-family: "Microsoft YaHei";
+  background: #efefef;
+  overflow-x: hidden;
+}
+input,
+select,
+button {
+  -webkit-top-highlight-color: transparent;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+#header {
+  background: #ff8410;
+  width: 100%;
+  height: 50px;
+  position: relative;
+  line-height: 50px;
+}
+#header .logo {
+  position: absolute;
+  left: 10px;
+}
+#header .logo img {
+  width: 200px;
+}
+#header .download_app {
+  position: absolute;
+  right: 10px;
+}
+#header .download_app img {
+  height: 30px;
+}
+#search {
+  width: 100%;
+  padding: 10px;
+  background: #fff;
+}
+#search form {
+  position: relative;
+  padding-right: 70px;
+}
+#search form input[type='search'] {
+  font-size: 14px;
+  border: 0;
+  width: 100%;
+  background: #f1f1f1;
+  height: 30px;
+  border-radius: 20px;
+  text-indent: 20px;
+}
+#search form a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 30px;
+  border-radius: 20px;
+  width: 60px;
+  color: #fff;
+  padding: 0;
+  line-height: 30px;
+  background: #ff8410;
+}
+/*页面导航*/
+#product_nav {
+  background: #efefef;
+  position: relative;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+#product_nav .breadcrumb {
+  margin-bottom: 0px;
+}
+#product_nav .breadcrumb li:before {
+  content: '';
+  padding: 0px;
+}
+#product_nav .breadcrumb li:after {
+  content: '>';
+}
+#product_nav .btn-default {
+  position: absolute;
+  right: 10px;
+  top: 3px;
+  height: 30px;
+  background: #e6e6e6;
+}
+/*数据列表*/
+#product_list {
+  background: #fff;
+}
+#product_list > a .media {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+#product_list > a .media .media-left img {
+  width: 100px;
+}
+#product_list > a .media .media-body .media-heading {
+  line-height: 22px;
+}
+#product_list > a .media .media-body .price {
+  color: #ea3900;
+  font-size: 16px;
+}
+#product_list > a .media .media-body .other {
+  color: #a1a1a1;
+  font-size: 10px;
+}
+#pagination {
+  position: relative;
+  padding-top: 10px;
+  background: #fff;
+  margin-bottom: 20px;
+}
+#pagination .dropdown {
+  text-align: center;
+}
+#pagination .dropdown .dropdown-menu {
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 80px;
+}
+#pagination .dropdown .dropdown-menu li {
+  border-bottom: 1px solid #ccc;
+}
+#pagination .prev {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+#pagination .next {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+#footer {
+  height: 100px;
+  text-align: center;
+}
+#footer .row > div {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-left: 0px;
+  text-align: center;
+}
+#footer .row > div:last-child img {
+  width: 15px;
+  vertical-align: top;
+}
